@@ -12,7 +12,10 @@ class FeedCell: UITableViewCell {
 
     
     @IBOutlet var feedImage: UIImageView!
-  
+    @IBOutlet var feedEmail: UILabel!
+    @IBOutlet var feedComment: UILabel!
+    @IBOutlet var numberoFlikes: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +26,8 @@ class FeedCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-
+    @IBAction func likeClicked(_ sender: Any) {
+    }
+    
   
 }

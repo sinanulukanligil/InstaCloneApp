@@ -23,7 +23,10 @@ class FeedViewController: ViewController,UITableViewDelegate,UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = feedTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
-       
+        cell.feedImage.image = UIImage(named: "select.png")
+        cell.feedEmail.text = "user@hotmail.com"
+        cell.feedComment.text = "Very nice"
+        cell.numberoFlikes.text = "0"
         return cell
     }
     
